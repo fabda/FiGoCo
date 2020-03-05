@@ -2,7 +2,7 @@
 
 This is a [FIJI](https://fiji.sc) plugin which will give you the possibility to run a Deep Learning pretrained Keras model in the cloud (using Google Colaboratory as backend and its free GPU solution) directly from FIJI. The main advantages resides in the fact that absolutely no installation is required for the user except for this plugin installation.
 
-### Installation
+### 1) Installation
 
 1) Download and Install [Fiji](https://imagej.net/Fiji/Downloads) and copy the __FiGoCo__ directory directly into your Fiji/Plugins repository (once done, restart Fiji)
 2) Create a [NGROK account](https://ngrok.com/) to generate a __token__
@@ -10,7 +10,7 @@ This is a [FIJI](https://fiji.sc) plugin which will give you the possibility to 
 
 and that's it !
 
-### Run the FiGoCo plugin
+### 2) Run the FiGoCo plugin
 
 In order to proper run the FiGoCo plugin, you need to have 2 files:
 - Your pretrained Keras Model (*.h5)
