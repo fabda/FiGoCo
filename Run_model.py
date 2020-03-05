@@ -14,15 +14,6 @@ channel = None
 
 DIALOG = True
 
-if (not DIALOG):
-	# ---------------- GLOBAL PARAMETERS --------------------
-	HOST = "0.tcp.ngrok.io"
-	PORT = 12174
-	LOCAL_MODEL_FILENAME    = "C:\\Users\\daian\\Desktop\\Blob\\blob_model.h5"
-	LOCAL_IMAGE_FILENAME    = "C:\\Users\\daian\\Desktop\\Blob\\raw\\Blob_test.tif"
-	LOCAL_PREDICTION_SCRIPT = "C:\\Users\\daian\\Desktop\\Blob\\prediction.py"
-	LOCAL_RESULT_FILENAME   = "C:\\Users\\daian\\Desktop\\results.tif"
-	# --------------------------------------------------------
 if (DIALOG):
 	# ----------------- DIALOG TO FILL GLOBAL PARAMETERS -----
 
