@@ -36,5 +36,8 @@ SSH : http:\\0.tcp.ngrok.io:XXXX
 3. Select your image file (or stack) to process and click OK
 4. Wait some minutes (depending of the file size and model execution) and should see the result appear into a Fiji Window
 
+### 3) Demo
+
+TODO
 
 
