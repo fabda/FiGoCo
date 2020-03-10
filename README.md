@@ -1,4 +1,4 @@
-# FiGoCo
+# FiGoCo (Fiji Google Colab)
 
 This is a [FIJI](https://fiji.sc) plugin which will give you the possibility to run a Deep Learning pretrained Keras model in the cloud (using Google Colaboratory as backend and its free GPU solution) directly from FIJI. The main advantages resides in the fact that absolutely no installation is required except for this plugin installation (NO Python, NO CUDA, NO Tensorflow ... nothing), everything is run in the Google Colab GPU cloud.
 
