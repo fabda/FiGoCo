@@ -38,7 +38,7 @@ SSH : http:\\0.tcp.ngrok.io:XXXX
 
 ### 3) Demo
 
-A demonstration model has been trained on the Mitochondria Dataset [here](about:blank) using Keras.
+A demonstration model has been trained on the Electron Microscopy Dataset from [EPFL](https://www.epfl.ch/labs/cvlab/data/data-em/) using Keras.
 In order to run the Demo, you must download the 3 following file:
 
 - Trained Keras model (HDF5 format \*.h5): [here](https://drive.google.com/uc?export=download&id=1490iIpziiom7g36YluBHlzEGCtaKPjb1)
