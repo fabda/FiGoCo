@@ -16,6 +16,7 @@ Could be on your local machine, on the cloud, anywhere. The only condition to me
 
 If you don't have one model, images, python prediction scripts ..., you'll find all needed files into the __Demo__ paragraph at the end of this page.
 
+## Workflow
 
 ### 1) Fiji & FiGoCo Plugin Installation
 
