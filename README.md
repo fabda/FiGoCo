@@ -55,7 +55,7 @@ SSH : http:\\0.tcp.ngrok.io:XXXX
 7. Select your Python prediction.py script from your local computer and click OK
 8. Wait everything is upload to the server ... and your server is ready to process your images
 
-#### Part 2 : FiGoCo plugin : Run Model
+### 4) FiGoCo plugin : Run Model
 
 ![alt text](https://raw.githubusercontent.com/fabda/FiGoCo/master/images/step4.png)
 
