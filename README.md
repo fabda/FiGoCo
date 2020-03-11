@@ -64,6 +64,10 @@ SSH : http:\\0.tcp.ngrok.io:XXXX
 3. Select your image file (or stack) to process and click OK
 4. Wait some minutes (depending of the file size and model execution) and you should see the result appear into a Fiji Window
 
+__Note 1__ : If you want to run your model on another bunche of images, you don't need to Setup the server again !
+__Note 2__ : In case of inactivity on the server (no upload, no download ...) Google Colaboratory will unfortunately shutdown the server and you will need to redo the Setup Server step again.
+
+
 ## Demo
 
 A Demo model has been trained on the Electron Microscopy Dataset from [EPFL](https://www.epfl.ch/labs/cvlab/data/data-em/) using Keras.
