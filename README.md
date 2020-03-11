@@ -39,11 +39,8 @@ Once your token is generated, you'll never need to redo this step: you will reus
 
 ![alt text](https://raw.githubusercontent.com/fabda/FiGoCo/master/images/step3.png)
 
-
-And then you are ready to start:
-#### Part 1 : Google Colab Server
-1. Open Fiji/Plugin/FiGoCo Menu and select __Setup Server__ : A Google Colaboratory Notebook will popup
-2. Run the __Start__ cell to start the creation of the server
+1. Open Fiji/Plugin/FiGoCo Menu and select __Setup Server__ : A Google Colaboratory Notebook will popup. 
+2. Run the __Start__ cell to start the creation of the server 
 3. Once running, a prompt ask you to provide your __NGROK token__, please do so
 4. The cell finished its execution by showing a message giving your the address of your server and its port (XXXX)
 ```
@@ -54,18 +51,25 @@ SSH : http:\\0.tcp.ngrok.io:XXXX
 7. Select your Python prediction.py script from your local computer and click OK
 8. Wait everything is upload to the server ... and your server is ready to process your images
 
-#### Part 2 : Fiji 
+#### Part 2 : FiGoCo plugin : Run Model
+
+![alt text](https://raw.githubusercontent.com/fabda/FiGoCo/master/images/step4.png)
+
 1. Open Fiji/Plugin/FiGoCo Menu and select __Run_model__
 2. Provide again the __NGROK server address and port__ and click OK
 3. Select your image file (or stack) to process and click OK
-4. Wait some minutes (depending of the file size and model execution) and should see the result appear into a Fiji Window
+4. Wait some minutes (depending of the file size and model execution) and you should see the result appear into a Fiji Window
 
-### 3) Demo
+## Demo
 
-A demonstration model has been trained on the Electron Microscopy Dataset from [EPFL](https://www.epfl.ch/labs/cvlab/data/data-em/) using Keras.
+A Demo model has been trained on the Electron Microscopy Dataset from [EPFL](https://www.epfl.ch/labs/cvlab/data/data-em/) using Keras.
+
 In order to run the Demo, you must download the 3 following file:
 
 - Trained Keras model (HDF5 format \*.h5): [here](https://drive.google.com/uc?export=download&id=1490iIpziiom7g36YluBHlzEGCtaKPjb1)
 - The Demo Image (TIF stack \*.tif): [here](https://drive.google.com/uc?export=download&id=1ToeUXtgx_tyexcO78CKYaZwooUjbDb4U)
 - The Python prediction script (\*.py) : [here](https://drive.google.com/uc?export=download&id=1I_NuHm1Jv4dR4cktcWPoRbab2zZZOBnc)
+
+
+
 
