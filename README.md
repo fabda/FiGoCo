@@ -1,20 +1,44 @@
 # FiGoCo (Fiji Google Colab)
 
-This is a [FIJI](https://fiji.sc) plugin which will give you the possibility to run a Deep Learning pretrained Keras model in the cloud (using Google Colaboratory as backend and its free GPU solution) directly from FIJI. The main advantages resides in the fact that absolutely no installation is required except for this plugin installation (NO Python, NO CUDA, NO Tensorflow ... nothing), everything is run in the Google Colab GPU cloud.
+Deploying and running pretained Deep Learning model on user desktop is often a nightmare an unpleasant for non IT users (frameworks installation, hardware driver, versionning ...).
 
-### 1) Installation
+The goal of this [FIJI](https://fiji.sc) Jython plugin is to facilitate the deployment and the access to your pretrained Deep Learning model using only FIJI as user interface and [Google Colaboratory](https://colab.research.google.com/) cloud environment as background computing ressources (free CPU/GPU/TPU solution): No framework installation, no hardware requirement for high speed computing on the user machine.
 
-1) Download and Install [Fiji](https://imagej.net/Fiji/Downloads) and copy the __FiGoCo__ directory directly into your Fiji/Plugins repository (once done, restart Fiji)
-2) Create a [NGROK account](https://ngrok.com/) to generate a __token__
-3) If you don't already have one, please create a [Gmail account](https//www.google.com/gmail)
+You want to give it a try ? Just download __FiGoCo__ from this repo and start following the instructions below :)
 
-and that's it !
+### 0) Train a Deep Learning model using Keras
 
-### 2) Run the FiGoCo plugin
+![alt text](https://raw.githubusercontent.com/fabda/FiGoCo/master/images/step1.png)
 
-In order to proper run the FiGoCo plugin, you need to have 2 files:
-- Your pretrained Keras Model (*.h5)
-- Your "homemade" Python __prediction.py__ script which will be run on the server to make the predictions using your model
+Could be on your local machine, on the cloud, anywhere. The only condition to meet FiGoCo requirement is to have at the end of your training:
+- a trained __model__ saved into HDF5 formation (Keras compliant)
+- a Python script __predict.py__ able to run your model (see __demos/predict.py__ on this repo to have an example)
+
+### 1) Fiji & FiGoCo Plugin Installation
+
+1. In case you don't have Fiji installed on your computer, you can download the last version of Fiji website [here](https://imagej.net/Fiji/Downloads)
+2. Clone this repo and copy the __FiGoCo__ directory directly into your Fiji/Plugins repository (once done, restart Fiji)
+This directory contains two files :
+- *Setup_server.py* which will setup and start the FiGoCo server on Google Colaboratory
+- *Run_model.py* which will connect to your FiGoCo server, run your model on the user image and send back the results to the user.
+
+Before running this scripts, you need to complete the following step below.
+
+### 2) Create or use an NGROK Token
+
+![alt text](https://raw.githubusercontent.com/fabda/FiGoCo/master/images/step2.png)
+
+The purpose of this step will be to open a tunnel between FIJI and the FiGoCo server. One popular way of doing this is to use __ngrok__:
+
+- In case you don't have an ngrok account, please create a free one on [ngrok website](https://ngrok.com), generate a __authtoken__ and copy it somewhere because you will need it later.
+- In case you already have an ngrok accoung, just copy your __authtoken__ somewhere because you will need it later.
+
+Once your token is generated, you'll never need to redo this step: you will reuse it each time you need it to start a FiGoCo server.
+
+### 3) FiGoCo plugin : Setup Server
+
+![alt text](https://raw.githubusercontent.com/fabda/FiGoCo/master/images/step3.png)
+
 
 And then you are ready to start:
 #### Part 1 : Google Colab Server
