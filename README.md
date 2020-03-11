@@ -6,13 +6,16 @@ The goal of this [FIJI](https://fiji.sc) Jython plugin is to facilitate the depl
 
 You want to give it a try ? Just download __FiGoCo__ from this repo and start following the instructions below :)
 
-### 0) Train a Deep Learning model using Keras
+### Prerequisite : Train a Deep Learning model using Keras
 
 ![alt text](https://raw.githubusercontent.com/fabda/FiGoCo/master/images/step1.png)
 
 Could be on your local machine, on the cloud, anywhere. The only condition to meet FiGoCo requirement is to have at the end of your training:
 - a trained __model__ saved into HDF5 formation (Keras compliant)
 - a Python script __predict.py__ able to run your model (see __demos/predict.py__ on this repo to have an example)
+
+If you don't have one yet and you want to test this plugin, please found all needed files into the __Demo__ paragraph at the end of this page.
+
 
 ### 1) Fiji & FiGoCo Plugin Installation
 
@@ -70,6 +73,6 @@ In order to run the Demo, you must download the 3 following file:
 - The Demo Image (TIF stack \*.tif): [here](https://drive.google.com/uc?export=download&id=1ToeUXtgx_tyexcO78CKYaZwooUjbDb4U)
 - The Python prediction script (\*.py) : [here](https://drive.google.com/uc?export=download&id=1I_NuHm1Jv4dR4cktcWPoRbab2zZZOBnc)
 
-
+Once done, run the workflow !
 
 
