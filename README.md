@@ -68,11 +68,11 @@ SSH : http:\\0.tcp.ngrok.io:XXXX
 
 A Demo model has been trained on the Electron Microscopy Dataset from [EPFL](https://www.epfl.ch/labs/cvlab/data/data-em/) using Keras.
 
-In order to run the Demo, you must download the 3 following file:
+In order to run the Demo model, you must download the 3 following file:
 
-- Trained Keras model (HDF5 format \*.h5): [here](https://drive.google.com/uc?export=download&id=1490iIpziiom7g36YluBHlzEGCtaKPjb1)
-- The Demo Image (TIF stack \*.tif): [here](https://drive.google.com/uc?export=download&id=1ToeUXtgx_tyexcO78CKYaZwooUjbDb4U)
-- The Python prediction script (\*.py) : [here](https://drive.google.com/uc?export=download&id=1I_NuHm1Jv4dR4cktcWPoRbab2zZZOBnc)
+- Pretrained Keras demo model (HDF5 format \*.h5): [here](https://drive.google.com/uc?export=download&id=1490iIpziiom7g36YluBHlzEGCtaKPjb1)
+- Demo Images (TIF stack \*.tif): [here](https://drive.google.com/uc?export=download&id=1ToeUXtgx_tyexcO78CKYaZwooUjbDb4U)
+- Demo Python prediction script (*predict.py*) : [here](https://drive.google.com/uc?export=download&id=1I_NuHm1Jv4dR4cktcWPoRbab2zZZOBnc)
 
 Once done, run the workflow !
 
