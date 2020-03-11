@@ -45,7 +45,7 @@ if (DIALOG):
 jsch=JSch()
 
 # SSH Connection to DeepLearning server
-IJ.log("-- Connection to Deep Learning Server")
+IJ.log("-- Connection to FiGoCo Server")
 time0 = time.time()
 session=jsch.getSession("root", HOST, PORT);
 session.setPassword("12345");
@@ -62,7 +62,7 @@ if (True):
 	channel.setInputStream(None);
 	channel.setErrStream(System.err);
 	instream=channel.getInputStream();
-	IJ.log("-- Installing necessary python libraries on the server ...")
+	IJ.log("-- Installing python libraries on the server ...")
 	channel.connect();
 	time0 = time.time()
 	while (not channel.isClosed()):
@@ -89,6 +89,6 @@ if (True):
 channel.disconnect()
 session.disconnect()
 
-IJ.log('Server is now ready, please run the "Run model" script to process your image !')	
+IJ.log('FiGoCo Server is now ready, please run the "Run model" script to process your image !')	
 
 
