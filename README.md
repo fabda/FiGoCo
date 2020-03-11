@@ -14,7 +14,7 @@ Could be on your local machine, on the cloud, anywhere. The only condition to me
 - a trained __model__ saved into HDF5 formation (Keras compliant)
 - a Python script __predict.py__ able to run your model (see __demos/predict.py__ on this repo to have an example)
 
-If you don't have one yet and you want to test this plugin, please found all needed files into the __Demo__ paragraph at the end of this page.
+If you don't have one model, images, python prediction scripts ..., you'll find all needed files into the __Demo__ paragraph at the end of this page.
 
 
 ### 1) Fiji & FiGoCo Plugin Installation
