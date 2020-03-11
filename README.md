@@ -50,7 +50,7 @@ Once your token is generated, you'll never need to redo this step: you will reus
 ```
 SSH : http:\\0.tcp.ngrok.io:XXXX
 ```
-5. Go Back to Fiji FiGoCo "Setup Server" window and fill the __NGROK server address and port__ and click OK
+5. Go Back to Fiji FiGoCo "Setup Server" window and fill the __NGROK server address and port__ (replace XXXX by your randomly assigned port number by ngrok) and click OK
 6. Select your Keras models (*.h5) from your local computer and click OK
 7. Select your Python prediction.py script from your local computer and click OK
 8. Wait everything is upload to the server ... and your server is ready to process your images
